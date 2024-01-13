@@ -3,7 +3,7 @@ Welcome to the Azamgarh City Information Website! Here, you'll find comprehensiv
 
 Table of Contents
 <ol>
-<li>>About Azamgarh</li>
+<li>About Azamgarh</li>
 <li>Railway Stations Azamgarh</li>
 <li>Top Spiritual Places</li>
 <li>Top Schools</li>
