@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&display=swap');
+.footer-container h1{
+    font-family: 'Arizonia', cursive;
+    text-align: center;
+}
+.wrapper7{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    text-align: center;
+    justify-content: space-between;
+    background-color:#0F9FB4;
+    color:antiquewhite;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.first ul li{
+    margin-top: 10px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+    font-size:25px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.second1{
+    text-align: center;
+    background-color: #0F9FB4;
+    color:antiquewhite;
+    font-size: 20px;
+    font-family: serif;
+}
+.second ul li{
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size:25px;
+    text-decoration: none;
+}
+.second ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.third ul li{
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom:40px;
+    display:flex;
+    flex-direction:column-reverse;
+    font-size:25px;
+}
+.first1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+  

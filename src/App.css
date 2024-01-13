@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&family=Varela&display=swap');
+body{
+  margin:0;
+  padding:0;
+}
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-theme {
+  background-color: #333333;
+  color: #ffffff;
+}
+/* Initial style */
+.divStyle1 {
+  height:100vw;
+  width:100vw;
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Alternative style */
+.divStyle2 {
+  height:100vw;
+  width:100vw;
+  background-color: lightgreen;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.wrapper{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0F9FB4;
+  color:#ffffff;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.wrapper span {
+  display: none; /* Hide the text by default */
+}
+
+/* Show the text when the navbar is hovered */
+.wrapper:hover span {
+  display: inline-block;
+}
+.wrapper:hover {
+  background-color: #ff892e;
+}
+.l1{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap:30px;
+  font-family: 'Varela', sans-serif;
+}
+.l2 li {
+  list-style: none;
+  display:flex;
+  align-items: center;
+  margin-right: 90px;
+  font-family: 'Varela', sans-serif;
+}
+.wrapper2{
+  padding-top: 20px;
+  display:flex;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, #3498db, #2ecc71);
+}
+.h13{
+  font-family: 'Arizonia', cursive;
+  text-align: center;
+}
+.wrapper2 p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align:center;
+  justify-content: space-between;
+  margin-left:70px;
+  color:rgb(255, 254, 254);
+  font-style: italic;
+}
+.about{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about img{
+  margin-right: 200px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  width:300px;
+  height: 400px;
+  border: 5px rgb(249, 249, 249) dashed;
+}
+.wrapper3{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, rgb(255, 233, 233), #ecf8f9);
+}
+.wrapper3 h1{
+  font-family: 'Arizonia', cursive;
+  text-align: center;
+}
+.img1{
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.img1 img{
+  padding: 10px;
+  border: 2px orangered dashed;
+}
+.railwaycss{
+  text-align: center;
+  margin: 40px;
+  color:#000000;
+  font-style: italic;
+  font-weight:bold;
+}
+.railwaycss h2{
+  text-align: left;
+}
+.railwaycss h2 a button{
+  color: #f0f3f4;
+  background-color: #0F9FB4;
+  border: 1px solid #0F9FB4 ;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.wrapper4{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(45deg, #3498db,#2ecc71 );
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.h23{
+  font-family: 'Arizonia', cursive;
+  text-align: center;
+}
+.di1{
+   margin-left:35px;
+   background-color: #ecf8f9;
+   border:5px dodgerblue dotted;
+   text-align:center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.di2{
+  margin-right:15px;
+  background-color: #ecf8f9;
+  border:5px dodgerblue dotted;
+  text-align: center;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.di3{
+  margin-right:35px;
+  background-color: #ecf8f9;
+  border:5px dodgerblue dotted;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.di1 p{
+  width:400px;
+  padding: 10px;
+}
+.di2 p{
+  width: 400px;
+  padding: 10px;
+}
+.di3 p{
+  width:400px;
+  padding: 10px;
+}
+.di1 p a button{
+  color: #f0f3f4;
+  background-color: #0F9FB4;
+  border: 1px solid #0F9FB4 ;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.di2 p a button{
+  color: #f0f3f4;
+  background-color: #0F9FB4;
+  border: 1px solid #0F9FB4 ;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.di3 p a button{
+  color: #f0f3f4;
+  background-color: #0F9FB4;
+  border: 1px solid #0F9FB4 ;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.h33{
+  font-family: 'Arizonia', cursive;
+  text-align: center;
+}
+.di11{
+  margin-left:35px;
+  background-color: #ecf8f9;
+  border:5px rgb(255, 71, 30) dotted;
+  text-align:center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.di22{
+ margin-right:15px;
+ background-color: #ecf8f9;
+ border:5px rgb(255, 53, 30) dotted;
+ text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.di33{
+ margin-right:35px;
+ background-color: #ecf8f9;
+ border:5px rgb(255, 56, 30) dotted;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.di11 p{
+  width:400px;
+  padding: 10px;
+}
+.di22 p{
+  width: 400px;
+  padding: 10px;
+}
+.di33 p{
+  width:400px;
+  padding: 10px;
+}
+.di11 p a button{
+  color: #f0f3f4;
+  background-color: orangered;
+  border: 1px solid orangered ;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.di22 p a button{
+  color: #f0f3f4;
+  background-color: orangered;
+  border: 1px solid orangered ;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.di33 p a button{
+  color: #f0f3f4;
+  background-color: orangered;
+  border: 1px solid orangered ;
+  margin-left: 20px;
+  font-size: 20px;
+}
