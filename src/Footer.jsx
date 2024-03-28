@@ -4,10 +4,10 @@ import './Footer.css';
 
 const Footer = () => {
   return (
+    <>
+    <h1 className='h13'>Contact us</h1>
     <div className="footer-container">
-      <h1>Contact us</h1>
       <div className="wrapper7">
-        <div className="first1">
           <div className="first">
             <ul>
               <li><h2>Contact Information</h2></li>
@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="second1">
         © 2023 Copyright Utkarsh Singh. All Rights Reserved.
       </div>
-    </div>
+    </>
   );
 }
 

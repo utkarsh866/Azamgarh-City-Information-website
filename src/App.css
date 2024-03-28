@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cedarville+Cursive&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
   margin:0;
   padding:0;
@@ -7,6 +8,11 @@ body{
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+}
+.toggle-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .dark-theme {
@@ -22,7 +28,10 @@ body{
   padding: 10px;
   cursor: pointer;
 }
-
+.switch{
+  display: flex;
+  flex-direction: row;
+}
 /* Alternative style */
 .divStyle2 {
   height:100vw;
@@ -42,17 +51,84 @@ body{
   transition: background-color 0.5s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.wrapper span {
-  display: none; /* Hide the text by default */
+.l1 h1{
+  margin-top: auto;
+}
+.l1 button{
+  background-color: #0F9FB4;
+  border: 2px solid #0F9FB4;
+  font-size: 30px;
+}
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Show the text when the navbar is hovered */
-.wrapper:hover span {
-  display: inline-block;
+.nav-links li {
+  display: inline;
+  margin-right: 70px;
 }
-.wrapper:hover {
-  background-color: #ff892e;
+
+.nav-links li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
+
+
+/* Styles specific to mobile view */
+
+.nav-links-mobile li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.nav-links-mobile li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/* Other styles for mobile menu icon, etc. */
+.menu-icon {
+  display: none; /* Hide menu icon by default on desktop */
+}
+
+/* Media query for showing/hiding elements based on screen size */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop navigation links on mobile */
+  }
+
+  .menu-icon {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: larger;
+    color: #faf7f7;/* Show menu icon on mobile */
+  }
+  .nav-links-mobile {
+    display: block;
+    margin-top: 60px;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    right: 1px;
+    z-index: 1;
+  }
+  
+}
+
 .l1{
   margin-left: 30px;
   display: flex;
@@ -60,6 +136,9 @@ body{
   margin-top: 10px;
   gap:30px;
   font-family: 'Varela', sans-serif;
+}
+.l1 img{
+  margin-bottom: 10px;
 }
 .l2 li {
   list-style: none;
@@ -91,47 +170,62 @@ body{
   flex-direction: row;
   align-items: center;
 }
-.about img{
-  margin-right: 200px;
+.about video{
+  margin-right: 100px;
   margin-left: 100px;
   margin-bottom: 10px;
-  width:300px;
-  height: 400px;
-  border: 5px rgb(249, 249, 249) dashed;
+  height: 300px;
+  border: 5px rgb(249, 249, 249) solid;
 }
 .wrapper3{
   display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(45deg, rgb(255, 233, 233), #ecf8f9);
+  flex-direction: row;
+  background-image: linear-gradient(45deg,  #3498db, #2ecc71);
 }
-.wrapper3 h1{
-  font-family: 'Arizonia', cursive;
-  text-align: center;
+.wrapper31{
+  display: flex;
+  flex-direction: row-reverse;
+  background-image: linear-gradient(45deg,  #3498db, #2ecc71);
 }
 .img1{
   align-items: center;
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+   margin:40px 40px;
+   color: #ecf8f9;
+   font-family: "Montserrat Alternates", sans-serif;
+   font-weight: 500;
 }
 .img1 img{
-  padding: 10px;
-  border: 2px orangered dashed;
+  border: 5px #fff solid;
+  transition: all 0.5s ease-in-out;
+  transform:scale(1.0) ;
+}
+.img1 img:hover{
+  transform:scale(1.10) ;
 }
 .railwaycss{
-  text-align: center;
-  margin: 40px;
-  color:#000000;
+  text-align: justify;
+  margin: 10px;
   font-style: italic;
-  font-weight:bold;
+}
+.railwaycss p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  align-items: center;
+  margin :80px 50px;
+  margin-bottom: auto;
+  line-height: 25px;
+  color:#f5f2f2;
+  font-weight: 300;
 }
 .railwaycss h2{
-  text-align: left;
+  margin-top: 30px;
+  text-align: center;
+  color: #ecf8f9;
 }
 .railwaycss h2 a button{
   color: #f0f3f4;
-  background-color: #0F9FB4;
-  border: 1px solid #0F9FB4 ;
+  background-color: orangered;
+  border: 1px solid gold ;
   margin-left: 20px;
   font-size: 20px;
 }
@@ -157,6 +251,10 @@ body{
    display: flex;
    flex-direction: column;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   width: 400px; 
+   min-height: 850px; 
+   max-height: 850px; 
+   overflow: hidden;
 }
 .di2{
   margin-right:15px;
@@ -166,6 +264,9 @@ body{
    display: flex;
    flex-direction: column;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   width: 400px; 
+   min-height: 850px; 
+   max-height: 850px; 
 }
 .di3{
   margin-right:35px;
@@ -175,38 +276,53 @@ body{
   display: flex;
   flex-direction: column;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 850px; 
+  max-height: 850px; 
 }
 .di1 p{
-  width:400px;
+  width:350px;
   padding: 10px;
+  overflow-y: auto;
+  margin: 20px 0;
+  border:2px dodgerblue solid;
 }
 .di2 p{
-  width: 400px;
-  padding: 10px;
+  width: 350px;
+  overflow-y: auto;
+  padding-top: 10px;
+  margin: 20px;
+  border:2px dodgerblue solid;
 }
 .di3 p{
-  width:400px;
-  padding: 10px;
+  width:350px;
+  overflow-y: auto;
+  padding-top: 10px;
+  margin: 20px;
+  border:2px dodgerblue solid;
 }
-.di1 p a button{
+.di1  a button{
   color: #f0f3f4;
   background-color: #0F9FB4;
   border: 1px solid #0F9FB4 ;
   margin-left: 20px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
-.di2 p a button{
+
+.di2  a button{
   color: #f0f3f4;
   background-color: #0F9FB4;
   border: 1px solid #0F9FB4 ;
   margin-left: 20px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
-.di3 p a button{
+.di3  a button{
   color: #f0f3f4;
   background-color: #0F9FB4;
   border: 1px solid #0F9FB4 ;
   margin-left: 20px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 .h33{
@@ -273,4 +389,235 @@ body{
   border: 1px solid orangered ;
   margin-left: 20px;
   font-size: 20px;
+}
+/* ////////DROPDOWN MENU////////// */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 13px;
+  font-size: 16px;
+  border: #0F9FB4;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#0F9FB4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .wrapper2 {
+    padding-top: 10px; 
+  }
+  .about{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about p{
+    margin-right: 45px;
+  }
+  .about video{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    height: auto;
+    width:90%;
+    border: 5px rgb(249, 249, 249) solid;
+  }
+  .wrapper {
+    flex-direction: row;
+    text-align: center;
+  }
+  .menu-button{
+    display: block;
+  }
+  .menu-item{
+    display: none;
+  }
+  .l1 {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .l1 img {
+    margin-bottom: 5px;
+    height:55px;
+    width:55px;
+  }
+  h1{
+    font-size:1.5rem;
+  }
+  .l2 {
+    margin-top: 10px;
+  }
+  
+   .img1{
+    margin: 0px 0px;
+   }
+
+  .img1 img{
+    height:200px;
+    width:300px;
+    border: 5px  #fff solid;
+    transition: all 0.5s ease-in-out;
+    transform:scale(1.0) ;
+  }
+  .img1 img:hover{
+    transform:scale(1.10) ;
+  }
+
+  .railwaycss{
+    color:#000000;
+    font-style: italic;
+    font-weight:bold;
+    margin-top: 0px;
+  }
+  .railwaycss h2{
+    text-align: center;
+  }
+  .wrapper3{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg,  #3498db, #2ecc71);
+  }
+  .wrapper31{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg,  #3498db, #2ecc71);
+  }
+  .railwaycss p{
+    margin-top: 0px;
+    align-items: center;
+    margin-bottom: auto;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper4{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:40px;
+    background-image: linear-gradient(45deg, #3498db,#2ecc71 );
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .h23{
+    font-family: 'Arizonia', cursive;
+    text-align: center;
+  }
+  .di1{
+     width:85%;
+     margin: 20px 20px;
+  }
+  .di1 img ,.di2 img ,.di3 img{
+    margin-top: 20px;
+    height: 320px;
+    width: 320px;
+  }
+  .di2{
+    width: 81%;
+    padding-left: 20px;
+    margin-left: 15px;
+  }
+  .di3{
+    width: 81%;
+    padding-left: 20px;
+    margin-left: 23px;
+  }
+  .di1 p{
+    width:300px;
+  }
+  .di1 h3{
+    margin: 10px 10px;
+  }
+  .di2 p{
+    width: 300px;
+  }
+  .di3 p{
+    width:300px;
+    padding: 10px;
+  }
+  .di1 p a button{
+    color: #f0f3f4;
+    background-color: #0F9FB4;
+    border: 1px solid #0F9FB4 ;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .di2 p a button{
+    color: #f0f3f4;
+    background-color: #0F9FB4;
+    border: 1px solid #0F9FB4 ;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .di3 p a button{
+    color: #f0f3f4;
+    background-color: #0F9FB4;
+    border: 1px solid #0F9FB4 ;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .di11 img ,.di22 img ,.di33 img{
+  margin-top: 20px;
+  height: 320px;
+  width: 320px;
+  }
+  .di11{
+    width:85%;
+    margin: 20px 20px;
+ }
+ .di22{
+  width: 81%;
+  padding-left: 20px;
+  margin-left: 15px;
+}
+.di33{
+  width: 81%;
+  padding-left: 20px;
+  margin-left: 23px;
+}
+.di11 p{
+  width:300px;
+}
+.di11 h3{
+  margin: 10px 10px;
+}
+.di22 p{
+  width: 300px;
+}
+.di33 p{
+  width:300px;
+  padding: 10px;
+}
 }

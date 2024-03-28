@@ -3,10 +3,14 @@
     font-family: 'Arizonia', cursive;
     text-align: center;
 }
+.h13{
+    font-family: 'Arizonia', cursive;
+    text-align: center;
+  }
 .wrapper7{
     display:flex;
     width:100%;
-    flex-direction:column;
+    flex-direction:row;
     text-align: center;
     justify-content: space-between;
     background-color:#0F9FB4;
@@ -75,5 +79,15 @@
     text-align: center;
     justify-content: space-between;
 }
-
+@media only screen and (max-width: 767px) {
+    .wrapper7{
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        text-align: center;
+        justify-content: space-between;
+        background-color:#0F9FB4;
+        color:antiquewhite;
+    }
+}
   
