@@ -6,8 +6,12 @@ Table of Contents
 <li>About Azamgarh</li>
 <li>Railway Stations Azamgarh</li>
 <li>Top Spiritual Places</li>
+<li>Top College</li>
+<li>Top Market</li>
 <li>Top Schools</li>
 <li>Contact Us</li>
+<li>Azamgarh News</li>
+<li>AZAMGARH Weather</li>
 </ol>
 # React + Vite
 You can preview my website uaing this link-"https://azamgarhcity.netlify.app/"
