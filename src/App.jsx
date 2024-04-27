@@ -1,7 +1,6 @@
 import './App.css'
 import Topplace from './Topplace';
 import Topschool from './Topschool';
-// import Footer from './Footer';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';
