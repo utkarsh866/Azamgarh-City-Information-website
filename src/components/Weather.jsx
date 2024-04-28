@@ -1,12 +1,9 @@
-//App.js
-
 import { Oval } from 'react-loader-spinner';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './weather.css';
-
 
 function Weather() {
 	const [input, setInput] = useState('Azamgarh');

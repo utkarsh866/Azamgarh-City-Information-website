@@ -8,7 +8,7 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import NewsItem from './components/NewsItem';
 import TopCollege from './TopCollege';
-import Weather from './Weather App/weather';
+import Weather from './components/Weather';
 const App = () => {
   return (
     <div >
