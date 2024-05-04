@@ -1,4 +1,4 @@
-import Railway from './assets/Railwaystation.jpg'
+import Railway from './assets/RailwayStation.jpg'
 const Railwaystation = () => {
   return (
     <>
