@@ -1,4 +1,4 @@
-import aza from './Azalogo.png'
+import aza from '.asseta/Azalogo.png';
 import { useState ,useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon,faSun } from '@fortawesome/free-solid-svg-icons';

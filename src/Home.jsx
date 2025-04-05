@@ -1,6 +1,6 @@
-import About from './About';
-import Railwaystation from './Railwaystation';
-import Airport from "./Airport";
+import About from './Home/About';
+import Railwaystation from './Home/Railwaystation';
+import Airport from "./Home/Airport";
 export default function Home() {
   return (
     <div>

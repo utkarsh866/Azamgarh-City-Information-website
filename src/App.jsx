@@ -1,13 +1,13 @@
 import './App.css'
-import Topplace from './Topplace';
+import Topplace from './Top/Topplace';
 import Topschool from './Topschool';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Home from './Home';
-import Contact from './Contact';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import Contact from './Column/Contact';
+import NavBar from './Column/NavBar';
+import Footer from './Column/Footer';
 import NewsItem from './components/NewsItem';
-import TopCollege from './TopCollege';
+import TopCollege from './Top/TopCollege';
 import Weather from './components/Weather';
 const App = () => {
   return (
