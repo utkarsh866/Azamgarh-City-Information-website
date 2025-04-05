@@ -14,7 +14,7 @@ Table of Contents
 <li>AZAMGARH Weather</li>
 </ol>
 # React + Vite
-You can live preview  my website uaing this link-"https://www.veed.io/view/0ea14b23-15ba-422c-bc14-2684e5b20860?panel=share"
+You can live preview  my website uaing this link-"https://timely-empanada-134389.netlify.app/#/"
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
